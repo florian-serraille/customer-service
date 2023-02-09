@@ -55,6 +55,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <testFramework>JUNIT5</testFramework>
+                    <baseClassForTests>com.example.customerservice.ContractBaseClass</baseClassForTests>
                 </configuration>
             </plugin>
             <plugin>

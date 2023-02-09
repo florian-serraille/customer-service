@@ -1,5 +1,6 @@
 package com.example.customerservice;
 
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,5 +25,14 @@ public class CustomerController {
 
     interface CustomerRepository {
         List<Customer> findAll();
+    }
+
+    @Component
+    public static class CustomerRepositoryImpl implements CustomerRepository {
+
+        @Override
+        public List<Customer> findAll() {
+            return null;
+        }
     }
 }
